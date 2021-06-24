@@ -9,8 +9,7 @@
     <ProjectGuid>{d93f20a1-0c73-44e6-8fae-a4508f9fb6ec}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>Dw_Sucos</RootNamespace>
     <AssemblyName>Dw_Sucos</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -49,7 +48,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -67,6 +65,8 @@
     <Build Include="Tabelas\Dim_Produto.sql" />
     <Build Include="Tabelas\Dim_Organizacional.sql" />
     <Build Include="Tabelas\Dim_Tempo.sql" />
+    <Build Include="Tabelas\Fato_001.sql" />
+    <Build Include="Tabelas\Fato_002.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Dw_Sucos.refactorlog" />
